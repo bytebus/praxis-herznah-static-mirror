@@ -1,0 +1,11 @@
+{
+  "name": "praxis-herznah-static-mirror",
+  "private": true,
+  "scripts": {
+    "start": "anywhere -d mirror/praxis-herznah.de",
+    "build": "rm -rf mirror && wget -mkxKE -P mirror -e robots=off https://praxis-herznah.de || echo 'done.'"
+  },
+  "devDependencies": {
+    "anywhere": "^1.5.0"
+  }
+}
