@@ -1,0 +1,4 @@
+
+[[redirects]]
+  from = "/processwire/*"
+  to = "http://cms.praxis-herznah.de/processwire/:splat"
