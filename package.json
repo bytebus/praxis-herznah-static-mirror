@@ -3,9 +3,11 @@
   "private": true,
   "scripts": {
     "start": "anywhere -d mirror/praxis-herznah.de",
-    "build": "rm -rf mirror && wget -mkxKE -P mirror -e robots=off https://praxis-herznah.de || echo 'done.'"
+    "build": "rm -rf mirror && wget -mkxKE -P mirror -e robots=off https://praxis-herznah.de || echo 'done.' && node sanitize-html.js"
   },
   "devDependencies": {
-    "anywhere": "^1.5.0"
+    "@types/cheerio": "^0.22.17",
+    "anywhere": "^1.5.0",
+    "cheerio": "^1.0.0-rc.3"
   }
 }
