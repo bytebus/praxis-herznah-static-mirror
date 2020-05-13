@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "anywhere -d mirror/praxis-herznah.de",
-    "build": "rm -rf mirror && wget -mkxKE -P mirror -e robots=off https://praxis-herznah.de || echo 'done.' && node sanitize-html.js"
+    "build": "rm -rf mirror && wget -mkxKE -P mirror -e robots=off http://cms.praxis-herznah.de/ || echo 'done.' && node sanitize-html.js"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.17",
